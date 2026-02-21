@@ -2,29 +2,50 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L2 CAOS - High Five</title>
     <style>
-        body { background: #0a0a0a; color: #d1d1d1; font-family: 'Segoe UI', sans-serif; text-align: center; padding: 50px; }
-        .box { max-width: 600px; margin: auto; background: #161616; padding: 40px; border: 1px solid #333; border-radius: 10px; box-shadow: 0 0 30px rgba(0,0,0,0.7); }
-        h1 { color: #ff9d00; text-transform: uppercase; }
-        .info { margin: 20px 0; border-top: 1px solid #333; border-bottom: 1px solid #333; padding: 15px 0; }
-        .btn { display: inline-block; background: #c0392b; color: white; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; margin-top: 20px; transition: 0.3s; }
-        .btn:hover { background: #e74c3c; transform: translateY(-3px); }
+        :root { --primary: #e67e22; --dark: #0f0f0f; --accent: #2c3e50; }
+        body { background-color: var(--dark); color: #fff; font-family: 'Segoe UI', sans-serif; margin: 0; }
+        header { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x400'); background-size: cover; padding: 100px 20px; text-align: center; }
+        .container { max-width: 900px; margin: -50px auto 50px; background: #1a1a1a; padding: 40px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #333; }
+        h1 { color: var(--primary); font-size: 3em; margin: 0; text-transform: uppercase; }
+        .rates-table { width: 100%; border-collapse: collapse; margin: 20px 0; background: #222; }
+        .rates-table td { padding: 15px; border: 1px solid #333; text-align: center; font-weight: bold; }
+        .download-section { margin-top: 40px; padding: 20px; background: var(--accent); border-radius: 5px; }
+        .btn { display: inline-block; background: var(--primary); color: #fff; padding: 18px 40px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 1.2em; transition: 0.3s; }
+        .btn:hover { background: #d35400; transform: translateY(-3px); }
+        .status { color: #2ecc71; font-weight: bold; }
     </style>
 </head>
 <body>
-    <div class="box">
-        <h1>L2 CAOS H5</h1>
-        <p>Servidor Sieghardt Online!</p>
-        
-        <div class="info">
-            <p><strong>Rates:</strong> XP 50x / SP 50x / Adena 100x</p>
-            <p><strong>IP do Servidor:</strong> 187.114.13.133</p>
-        </div>
 
-        <p>Baixe a nossa System, cole na pasta do seu jogo e use o L2.exe para entrar.</p>
+<header>
+    <h1>L2 CAOS</h1>
+    <p>O Auge do High Five - Servidor Sieghardt</p>
+</header>
+
+<div class="container">
+    <h2>Informações do Servidor <span class="status">[ONLINE]</span></h2>
+    
+    <table class="rates-table">
+        <tr>
+            <td>XP: 50x</td>
+            <td>SP: 50x</td>
+            <td>Adena: 100x</td>
+            <td>Drop: 10x</td>
+        </tr>
+    </table>
+
+    <div class="download-section">
+        <h3>Como Jogar?</h3>
+        <p>1. Baixe a nossa System abaixo.</p>
+        <p>2. Extraia os arquivos dentro da pasta do seu Lineage II High Five.</p>
+        <p>3. Abra o jogo pelo arquivo <strong>L2.exe</strong> dentro da pasta System.</p>
         
-        <a href="COLOQUE_SEU_LINK_AQUI" class="btn">DOWNLOAD SYSTEM</a>
+        <a href="COLOQUE_AQUI_O_LINK_DO_SEU_DOWNLOAD" class="btn">BAIXAR SYSTEM (ZIP)</a>
     </div>
+</div>
+
 </body>
 </html>
